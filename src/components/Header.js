@@ -1177,6 +1177,63 @@ const SolarSystemPortfolio = () => {
 
 
 /* Responsive Adjustments for Spinning Boulder */
+@media (min-width: 280px) {
+  .spinning-boulder {
+    width: 80px !important;
+    height: 800px !important;
+    right: -5px !important;
+    top: 100px !important;
+  }
+}
+
+/* 320px (iPhone SE, small Android) */
+@media (min-width: 320px) {
+  .spinning-boulder {
+    width: 80px !important;
+    height: 800px !important;
+    right: -5px !important;
+    top: 100px !important;
+  }
+}
+
+/* 375px (iPhone X/11/12 mini) */
+@media (min-width: 375px) {
+  .spinning-boulder {
+    width: 80px !important;
+    height: 800px !important;
+    right: -5px !important;
+    top: 100px !important;
+  }
+}
+
+/* 414px (iPhone 8/X/11 Plus) */
+@media (min-width: 414px) {
+  .spinning-boulder {
+    width: 80px !important;
+    height: 800px !important;
+    right: -5px !important;
+    top: 100px !important;
+  }
+}
+
+/* 480px (Small tablets and large phones landscape) */
+@media (min-width: 480px) {
+  .spinning-boulder {
+    width: 80px !important;
+    height: 800px !important;
+    right: -5px !important;
+    top: 100px !important;
+  }
+}
+/* Small Screens */
+@media (min-width: 640px) {
+  .spinning-boulder {
+    width: 80px !important;
+    height: 800px !important;
+    right: -5px !important;
+    top: 100px !important;
+  }
+}
 @media screen and (max-width: 1600px) {
   .spinning-boulder {
     width: 300px !important;
