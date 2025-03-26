@@ -1073,6 +1073,69 @@ const SolarSystemPortfolio = () => {
   left: 8rem;
   top: 0.1rem;
 }
+  .floating-image {
+  width: 8rem;     /* 128px - for very small devices */
+  height: 8rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -4rem;
+}
+
+/* 280px (Galaxy Fold and similar) */
+@media (min-width: 280px) {
+  .floating-image {
+    width: 9rem;
+    height: 9rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -4rem;
+  }
+}
+
+/* 320px (iPhone SE, small Android) */
+@media (min-width: 320px) {
+  .floating-image {
+    width: 10rem;
+    height: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -4rem;
+  }
+}
+
+/* 375px (iPhone X/11/12 mini) */
+@media (min-width: 375px) {
+  .floating-image {
+    width: 11rem;
+    height: 11rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -4rem;
+  }
+}
+
+/* 414px (iPhone 8/X/11 Plus) */
+@media (min-width: 414px) {
+  .floating-image {
+    width: 11rem;
+    height: 11rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -3rem;
+  }
+}
+
+/* 480px (Small tablets and large phones landscape) */
+@media (min-width: 480px) {
+  .floating-image {
+    width: 11.5rem;
+    height: 11.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -2rem;
+  }
+}
 
 /* Small Screens */
 @media (min-width: 640px) {
