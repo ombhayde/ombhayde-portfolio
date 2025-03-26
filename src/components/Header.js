@@ -1185,6 +1185,22 @@ const SolarSystemPortfolio = () => {
     top: 100px !important;
   }
 }
+@media screen and (max-width: 320px) {
+  .spinning-boulder {
+    width: 80px !important;
+    height: 800px !important;
+    right: -5px !important;
+    top: 100px !important;
+  }
+}
+@media screen and (max-width: 280px) {
+  .spinning-boulder {
+    width: 80px !important;
+    height: 800px !important;
+    right: -5px !important;
+    top: 100px !important;
+  }
+}
 @keyframes radar-spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
