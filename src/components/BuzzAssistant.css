@@ -1,0 +1,236 @@
+@import url('https://fonts.cdnfonts.com/css/venite-adoremus');
+
+.buzz-assistant {
+    position: fixed;
+    bottom: 0rem;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .dialogue-box {
+    background-color: transparent;
+    border: 0.3px solid gray;
+    border-radius: 30px ;
+    padding: 10px 15px;
+    font-size: 1.0009rem;
+    font-family: "Arial", sans-serif;
+    color: #80C4E9;
+    margin-right: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    animation: fadeIn 0.8s ease-in-out;
+    transform: translateY(-60px) translateX(-50px);
+    font-weight: bold;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #fff; /* Base text color */
+    background: linear-gradient(
+      90deg,
+      #fff,
+      red,
+      #fff,
+      red
+    );
+    background-size: 200% 200%; /* Large background to enable animation */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1.5s infinite linear;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .1rem #fff,
+    0 0 0.7rem purple,
+    0 0 0.4rem #fff,
+    0 0 1rem #fff,
+    inset 0 0 0.2rem purple;
+    text-align: start;
+  }
+  
+  
+  .buzz-image {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .buzz-name {
+    font-weight: 2000;
+    font-size: 1.2rem;
+    color: #ffcc00;
+    background: linear-gradient(
+      90deg,
+      #5D8736,
+      #5D8736,
+      #fff,
+      #5D8736
+    );
+    background-size: 200% 200%; /* Large background to enable animation */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1.5s infinite linear;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  .buzz-name1{
+    font-weight: 2000;
+    font-size: 1.39rem;
+    color: #ffcc00;
+    background: linear-gradient(
+      90deg,
+      #1230AE,
+      #C68FE6,
+      #FFF7F7,
+      #6C48C5
+    );
+    background-size: 200% 200%; /* Large background to enable animation */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1.5s infinite linear;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  .buzz-name2{
+    font-weight: 2000;
+    font-size: 1.1rem;
+    color: #ffcc00;
+    background: linear-gradient(
+      90deg,
+      #FBFBFB,
+      #D4F6FF,
+      #C6E7FF,
+      #FFDDAE
+    );
+    background-size: 200% 200%; /* Large background to enable animation */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1.5s infinite linear;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+  .buzz-name3{
+    font-weight: 2000;
+    font-size: 1.1rem;
+    color: #ffcc00;
+    background: linear-gradient(
+      90deg,
+      #FDDBBB,
+      #CB9DF0,
+      #F0C1E1,
+      #FDDBBB
+    );
+    background-size: 200% 200%; /* Large background to enable animation */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1.5s infinite linear;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+  /* Responsive Adjustments for Buzz Assistant */
+@media screen and (max-width: 1200px) {
+  .buzz-image-container {
+    width: 7rem;
+    height: 9rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .buzz-image-container {
+    width: 6rem;
+    height: 8rem;
+    bottom: 0.75rem;
+    left: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .buzz-image-container {
+    width: 5rem;
+    height: 7rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+  .buzz-name{
+    font-size: 1rem;
+  }
+  .dialogue-box {
+    max-width: 220px;
+    font-size: 0.7rem;
+    padding: 8px 12px;
+  }
+  .buzz-assistant{
+    left: -1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .buzz-image-container {
+    width: 2rem;
+    height: 4rem;
+    bottom: 0.25rem;
+    left: 0.25rem;
+  }
+  .buzz-assistant{
+    left: -1rem;
+  }
+  .dialogue-box {
+    max-width: 220px;
+    margin-top: 40px;
+    font-size: 0.7rem;
+    padding: 6px 10px;
+  }
+  .buzz-name{
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .buzz-image-container {
+    width: 3.5rem;
+    height: 5rem;
+  }
+
+  .dialogue-box {
+    max-width: 120px;
+    font-size: 0.6rem;
+    padding: 5px 8px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .buzz-image-container {
+    width: 3rem;
+    height: 4.5rem;
+    bottom: 0.1rem;
+    left: 0.1rem;
+  }
+
+  .dialogue-box {
+    max-width: 100px;
+    font-size: 0.5rem;
+    padding: 4px 6px;
+  }
+}
