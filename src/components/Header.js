@@ -1073,13 +1073,14 @@ const SolarSystemPortfolio = () => {
   left: 8rem;
   top: 0.1rem;
 }
-  .floating-image {
+  
+.floating-image {
   width: 8rem;     /* 128px - for very small devices */
   height: 8rem;
   position: absolute;
-  left: 50%;
+  left: 21%;
   transform: translateX(-50%);
-  top: -4rem;
+  top: 1rem;
 }
 
 /* 280px (Galaxy Fold and similar) */
@@ -1087,9 +1088,9 @@ const SolarSystemPortfolio = () => {
   .floating-image {
     width: 9rem;
     height: 9rem;
-    left: 50%;
+    left: 22%;
     transform: translateX(-50%);
-    top: -4rem;
+    top: 1rem;
   }
 }
 
@@ -1098,9 +1099,9 @@ const SolarSystemPortfolio = () => {
   .floating-image {
     width: 10rem;
     height: 10rem;
-    left: 50%;
+    left: 25%;
     transform: translateX(-50%);
-    top: -4rem;
+    top: 1rem;
   }
 }
 
@@ -1109,9 +1110,9 @@ const SolarSystemPortfolio = () => {
   .floating-image {
     width: 11rem;
     height: 11rem;
-    left: 50%;
+    left: 25%;
     transform: translateX(-50%);
-    top: -4rem;
+    top: 1rem;
   }
 }
 
@@ -1120,9 +1121,9 @@ const SolarSystemPortfolio = () => {
   .floating-image {
     width: 11rem;
     height: 11rem;
-    left: 50%;
+    left: 30%;
     transform: translateX(-50%);
-    top: -3rem;
+    top: 1rem;
   }
 }
 
@@ -1131,12 +1132,11 @@ const SolarSystemPortfolio = () => {
   .floating-image {
     width: 11.5rem;
     height: 11.5rem;
-    left: 50%;
+    left: 30%;
     transform: translateX(-50%);
-    top: -2rem;
+    top: 1rem;
   }
 }
-
 /* Small Screens */
 @media (min-width: 640px) {
   .floating-image {
