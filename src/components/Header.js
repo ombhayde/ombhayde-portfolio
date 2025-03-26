@@ -1177,148 +1177,144 @@ const SolarSystemPortfolio = () => {
 
 
 /* Responsive Adjustments for Spinning Boulder */
-@media (min-width: 280px) {
+/* Base styles for all devices */
+.spinning-boulder {
+  width: 80px;
+  height: 80px;
+  right: -5px;
+  top: 200px;
+  position: absolute;
+  z-index: 10;
+}
+
+/* Mobile-first approach with max-width queries */
+/* Extremely small devices (Galaxy Fold) */
+@media screen and (max-width: 280px) {
   .spinning-boulder {
-    width: 80px !important;
-    height: 800px !important;
+    width: 60px !important;
+    height: 60px !important;
     right: -5px !important;
-    top: 100px !important;
+    top: 250px !important;
   }
 }
 
-/* 320px (iPhone SE, small Android) */
-@media (min-width: 320px) {
+/* Extra small devices (iPhone SE) */
+@media screen and (min-width: 281px) and (max-width: 320px) {
   .spinning-boulder {
-    width: 80px !important;
-    height: 800px !important;
+    width: 70px !important;
+    height: 70px !important;
     right: -5px !important;
-    top: 100px !important;
+    top: 250px !important;
   }
 }
 
-/* 375px (iPhone X/11/12 mini) */
-@media (min-width: 375px) {
-  .spinning-boulder {
-    width: 80px !important;
-    height: 800px !important;
-    right: -5px !important;
-    top: 100px !important;
-  }
-}
-
-/* 414px (iPhone 8/X/11 Plus) */
-@media (min-width: 414px) {
-  .spinning-boulder {
-    width: 80px !important;
-    height: 800px !important;
-    right: -5px !important;
-    top: 100px !important;
-  }
-}
-
-/* 480px (Small tablets and large phones landscape) */
-@media (min-width: 480px) {
-  .spinning-boulder {
-    width: 80px !important;
-    height: 800px !important;
-    right: -5px !important;
-    top: 100px !important;
-  }
-}
-/* Small Screens */
-@media (min-width: 640px) {
-  .spinning-boulder {
-    width: 80px !important;
-    height: 800px !important;
-    right: -5px !important;
-    top: 100px !important;
-  }
-}
-@media screen and (max-width: 1600px) {
-  .spinning-boulder {
-    width: 300px !important;
-    height: 300px !important;
-    right: -70px !important;
-    top: 520px !important;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .spinning-boulder {
-    width: 290px !important;
-    height: 290px !important;
-    right: -60px !important;
-    top: 550px !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .spinning-boulder {
-    width: 290px !important;
-    height: 290px !important;
-    right: -70px !important;
-    top: 520px !important;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .spinning-boulder {
-    width: 270px !important;
-    height: 270px !important;
-    right: -70px !important;
-    top: 550px !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .spinning-boulder {
-    width: 250px !important;
-    height: 250px !important;
-    right: -60px !important;
-    top: 580px !important;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .spinning-boulder {
-    width: 200px !important;
-    height: 200px !important;
-    right: -30px !important;
-    top: 620px !important;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .spinning-boulder {
-    width: 100px !important;
-    height: 100px !important;
-    right: -15px !important;
-    top: 150px !important;
-  }
-}
-
-@media screen and (max-width: 375px) {
+/* Small devices (iPhone X/11/12 mini) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
   .spinning-boulder {
     width: 80px !important;
     height: 80px !important;
     right: -10px !important;
-    top: 100px !important;
+    top: 250px !important;
   }
 }
-@media screen and (max-width: 320px) {
+
+/* Medium-small devices (iPhone 8/X/11 Plus) */
+@media screen and (min-width: 376px) and (max-width: 414px) {
   .spinning-boulder {
-    width: 80px !important;
-    height: 800px !important;
-    right: -5px !important;
-    top: 100px !important;
+    width: 100px !important;
+    height: 100px !important;
+    right: -40px !important;
+    top: 260px !important;
   }
 }
-@media screen and (max-width: 280px) {
+
+/* Medium devices (small tablets and large phones) */
+@media screen and (min-width: 415px) and (max-width: 480px) {
   .spinning-boulder {
-    width: 80px !important;
-    height: 800px !important;
+    width: 100px !important;
+    height: 100px !important;
+    right: -15px !important;
+    top: 200px !important;
+  }
+}
+
+/* Medium-large devices */
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .spinning-boulder {
+    width: 120px !important;
+    height: 120px !important;
+    right: -20px !important;
+    top: 300px !important;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .spinning-boulder {
+    width: 150px !important;
+    height: 150px !important;
+    right: -30px !important;
+    top: 350px !important;
+  }
+}
+
+/* Small laptops */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .spinning-boulder {
+    width: 200px !important;
+    height: 200px !important;
+    right: -40px !important;
+    top: 400px !important;
+  }
+}
+
+/* Medium laptops and desktops */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .spinning-boulder {
+    width: 250px !important;
+    height: 250px !important;
+    right: -120px !important;
+    top: 250px !important;
+  }
+}
+
+/* Large laptops and desktops */
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .spinning-boulder {
+    width: 280px !important;
+    height: 280px !important;
+    right: -180px !important;
+    top: 250px !important;
+  }
+}
+
+/* Extra large desktops */
+@media screen and (min-width: 1401px) {
+  .spinning-boulder {
+    width: 300px !important;
+    height: 300px !important;
+    right: -120px !important;
+    top: 200px !important;
+  }
+}
+
+/* Special case for iQOO Z5 5G and similar devices */
+@media screen and (min-width: 390px) and (max-width: 395px) {
+  .spinning-boulder {
+    width: 85px !important;
+    height: 85px !important;
+    right: -10px !important;
+    top: 300px !important; /* Position further down */
+  }
+}
+
+/* Handle orientation changes */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .spinning-boulder {
+    width: 60px !important;
+    height: 60px !important;
     right: -5px !important;
-    top: 100px !important;
+    top: 150px !important; /* Lower position in landscape */
   }
 }
 @keyframes radar-spin {
